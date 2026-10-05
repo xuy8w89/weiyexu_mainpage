@@ -1,33 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weiye Xu - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weiye Xu</title>
+  <meta name="description" content="Weiye Xu: M.S. student at the University of Washington and Tsinghua University working on machine learning, intelligent sensing, and human-computer interaction.">
   <style>
+    :root {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #4b2e83;
+      --rule: #dddddd;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
       text-align: center;
-      background-color: #f5f5f5;
+      padding: 32px 16px 8px;
     }
-    h1 {
-      margin-top: 20px;
+    h1 { margin: 0; font-size: 2.2em; }
+    .tagline { margin: 6px 0 10px; color: var(--muted); }
+    .contact a { margin: 0 8px; white-space: nowrap; }
+    main {
+      max-width: 860px;
+      margin: 16px auto 40px;
+      padding: 8px 32px 24px;
+      background: var(--card);
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     }
-    .pdf-container {
-      width: 100%;
-      height: 90vh;
-      margin-top: 10px;
+    h2 {
+      margin: 28px 0 10px;
+      padding-bottom: 4px;
+      font-size: 1.2em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--rule);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .entry { margin: 14px 0; }
+    .entry-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0 12px;
+    }
+    .entry-title { font-weight: bold; }
+    .entry-date { color: var(--muted); font-size: 0.92em; white-space: nowrap; }
+    .entry-sub { font-style: italic; color: var(--muted); font-size: 0.95em; }
+    ul { margin: 6px 0; padding-left: 20px; }
+    li { margin: 3px 0; }
+    .pubs li { margin: 8px 0; }
+    .me { font-weight: bold; }
+    .tags a {
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      padding: 1px 8px;
+      font-size: 0.85em;
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+    }
+    .skills dt { font-weight: bold; float: left; clear: left; width: 150px; }
+    .skills dd { margin: 0 0 6px 150px; }
+    .cv-link { text-align: center; margin-top: 28px; }
+    .cv-link a {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+    }
+    footer { text-align: center; color: var(--muted); font-size: 0.85em; padding-bottom: 24px; }
+    @media (max-width: 600px) {
+      main { padding: 4px 16px 16px; margin: 8px 8px 24px; }
+      .skills dt { float: none; width: auto; }
+      .skills dd { margin-left: 0; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Weiye Xu</h1>
-  <p>Engineer | Researcher | Developer</p>
+  <header>
+    <h1>Weiye Xu</h1>
+    <p class="tagline">Machine Learning &middot; Intelligent Sensing &middot; Human&ndash;Computer Interaction</p>
+    <p class="contact">
+      <a href="mailto:xuwy24@uw.edu">xuwy24@uw.edu</a>
+      <a href="https://www.linkedin.com/in/weiye-xu-gix2024">LinkedIn</a>
+      <a href="https://github.com/xuy8w89">GitHub</a>
+      <a href="CV.pdf">CV (PDF)</a>
+    </p>
+  </header>
 
-  <div class="pdf-container">
-    <iframe src="CV.pdf" width="80%" height="100%"></iframe>
-  </div>
+  <main>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a dual-degree M.S. student in Computer Science at the University of Washington and Tsinghua University,
+        working at the intersection of machine learning, intelligent sensing, and human&ndash;computer interaction.
+        I have three first-author papers at ACM CHI, UIST, and IMWUT, 10 patents, and research shipped to production at Ant Group.
+        I like owning the full loop: hardware prototype, data collection, model design, deployment, and user study.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">University of Washington, Seattle, WA</span>
+          <span class="entry-date">09/2024 &ndash; 03/2027 (expected)</span>
+        </div>
+        <div>M.S. in Technology Innovation (Computer Science / HCI track), Global Innovation Exchange; dual degree with Tsinghua</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Tsinghua University, Beijing, China</span>
+          <span class="entry-date">09/2024 &ndash; 06/2027 (expected)</span>
+        </div>
+        <div>M.S. in Computer Science, Global Innovation Exchange &middot; GPA 4.0/4.0, ranked 1st in cohort &middot; Advisor: Prof. Yuanchun Shi</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Tsinghua University, Beijing, China</span>
+          <span class="entry-date">09/2020 &ndash; 06/2024</span>
+        </div>
+        <div>B.Eng. in Computer Science and Technology &middot; GPA 3.73/4.0</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li>
+          <span class="me">Weiye Xu</span>, Zhang Jiang, Siqi Zheng, Xiyuxing Zhang, Changhao Zhang, Jian Liu, Weiqiang Wang, Yuntao Wang.
+          <em>AuthGlass: Benchmarking Voice Liveness Detection and Authentication on Smart Glasses via Comprehensive Acoustic Features.</em>
+          ACM IMWUT 2026.
+          <div class="tags">
+            <a href="https://doi.org/10.1145/3831980">DOI</a>
+            <a href="https://arxiv.org/abs/2509.20799">arXiv</a>
+            <a href="https://huggingface.co/datasets/JZ0102/AuthGlass_Dataset">Dataset</a>
+            <a href="https://github.com/xuy8w89/IMWUT2026-AuthGlass">Project</a>
+          </div>
+        </li>
+        <li>
+          <span class="me">Weiye Xu</span>*, Yue Xu*, Devin Murphy, Sen Zhang, Te-Yen Wu, Yiyue Luo.
+          <em>KnitID: Machine-Knitted RFID Antennas for Battery-Free Authentication, Localization and Interaction.</em>
+          ACM UIST 2026 (poster). (*equal contribution)
+        </li>
+        <li>
+          <span class="me">Weiye Xu</span>, Tony Li, Yuntao Wang, Xing-Dong Yang, Te-Yen Wu.
+          <em>BIT: Battery-free, IC-less and Wireless Smart Textile Interface and Sensing System.</em>
+          ACM CHI 2025.
+        </li>
+        <li>
+          Devin Murphy&dagger;, Sen Zhang&dagger;, Justin Yuhang Sun&dagger;, Ghovindo Siadari, Yuxuan Miao, <span class="me">Weiye Xu</span>, Jungwon Choi, Yiyue Luo.
+          <em>Machine-Knitted Magnetoactive Textiles for Wireless Charging, Biomechanical Sensing, and Haptic Feedback.</em>
+          npj Flexible Electronics (under review). (&dagger;equal contribution)
+        </li>
+        <li>
+          Tianyu Yu, <span class="me">Weiye Xu</span>, Haiqing Xu, Guanhong Liu, Chang Liu, Guanyun Wang, Haipeng Mi.
+          <em>Thermotion: Design and Fabrication of Thermofluidic Composites for Animation Effects on Object Surfaces.</em>
+          ACM CHI 2023.
+        </li>
+        <li>
+          Tianyu Yu, Yige Fan, Zhixiang Zhang, Qingyu Hu, <span class="me">Weiye Xu</span>, Haipeng Mi, Stefanie Mueller.
+          <em>Thermaterial: Program Ambient Heat Transfer Behaviors on Objects through Fluidic Composites.</em>
+          ACM CHI EA 2024.
+        </li>
+        <li>
+          Zeyu Wang, Ruotong Yu, Xiangyang Wang, Jiexin Ding, Jiankai Tang, Jun Fang, Zhe He, Zhuojun Li, Tobias R&ouml;ddiger,
+          <span class="me">Weiye Xu</span>, Xiyuxing Zhang, Huan-ang Gao, Nan Gao, Chun Yu, Yuanchun Shi, Yuntao Wang.
+          <em>Computing with Smart Rings: A Systematic Literature Review.</em>
+          ACM IMWUT 2025.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">KnitID: Machine-Knitted RFID Antennas for Battery-Free Sensing and Interaction</span>
+          <span class="entry-date">11/2025 &ndash; present</span>
+        </div>
+        <div class="entry-sub">Graduate Research Assistant, WI Lab, University of Washington</div>
+        <ul>
+          <li>Integrated magnet wire into the loop-over-loop structure of industrial machine knitting to make a UHF RFID antenna with about 1.4 m on-body read range in a 60 &times; 8 mm footprint; mapped the design space (wire coating, knit structure, wale count, conductive length) with far-field simulation and empirical sweeps.</li>
+          <li>Built a multimodal RSSI + phase sensing pipeline and a bidirectional-GRU localization model with physics-based constraints for trajectory reconstruction and real-time interaction sensing: 100% tag identification, about 85% interaction recognition accuracy, and around 6 cm localization error.</li>
+          <li>Co-first author; accepted as an ACM UIST 2026 poster, with the full paper submitted to ACM CHI 2027.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">AuthGlass: Voice Liveness Detection and Authentication on Smart Glasses</span>
+          <span class="entry-date">07/2025 &ndash; 02/2026</span>
+        </div>
+        <div class="entry-sub">Project lead, Pervasive HCI Lab, Tsinghua University, in collaboration with Ant Group</div>
+        <ul>
+          <li>Built a synchronized 16-channel smart-glasses prototype (14 air-conduction + 2 bone-conduction microphones, 96 kHz) and collected the AuthGlass dataset: 42 participants, 30K+ genuine and attack utterances across 7 attack settings (~188 GB, released on Hugging Face).</li>
+          <li>Designed AuthG-Live, a liveness detector built on sound-field time-delay and energy-ratio patterns learned from genuine speech only: &gt;96% accuracy across 7 attack settings and robust to unseen attacks.</li>
+          <li>Designed AuthG-Net, a multimodal CNN with domain-adversarial training for passphrase-independent authentication: &gt;97% accuracy, about 1% drop on unseen phrases.</li>
+          <li>First-author paper in ACM IMWUT 2026.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">BIT: Battery-Free, IC-Less and Wireless Smart Textile Interface and Sensing System</span>
+          <span class="entry-date">09/2023 &ndash; 11/2024</span>
+        </div>
+        <div class="entry-sub">Project lead, XD Lab (Simon Fraser University) and Pervasive HCI Lab (Tsinghua University)</div>
+        <ul>
+          <li>Proposed a wireless-power-transfer sensing model for textiles based on multi-resonant circuits and near-field coil coupling, with a hardware&ndash;algorithm co-design that recovers sensor state from impedance spectra.</li>
+          <li>Fabricated a VNA-based auto-solver and smart textile interfaces including a glove and a shirt (PCB design, soldering, auto-embroidery).</li>
+          <li>First-author paper at ACM CHI 2025; first inventor on a U.S. patent assigned to Florida State University.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Industry Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Ant Group (Alipay) &middot; Machine Learning Engineer Intern, Trust &amp; Safety</span>
+          <span class="entry-date">06/2026 &ndash; 09/2026</span>
+        </div>
+        <div class="entry-sub">Hangzhou, China</div>
+        <ul>
+          <li>Owned end-to-end user verification for smartwatch tap-to-pay: designed a consented data collection protocol across 450+ sessions and a data-cleaning pipeline that caught and repaired 100% of labeled defects.</li>
+          <li>Trained an IMU + PPG multimodal verification model (CAME-JEPA) reaching 10% FRR at 90% TRR in a low-assurance setting, and designed the user interaction flow around it.</li>
+          <li>Contributed the architecture survey and data preprocessing for a mixture-of-experts foundation model over heterogeneous wearable sensor streams.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Ant Group (Alipay) &middot; Machine Learning Engineer Intern, Trust &amp; Safety</span>
+          <span class="entry-date">07/2025 &ndash; 02/2026</span>
+        </div>
+        <div class="entry-sub">Beijing, China</div>
+        <ul>
+          <li>Built the 16-channel microphone smart-glasses prototype and Python acquisition pipeline that the team adopted as its data collection platform for voice authentication and noise-suppression training.</li>
+          <li>The proposed inter-channel time-delay/energy feature scheme for voice anti-spoofing shipped in Alipay's production voice verification stack.</li>
+          <li>Filed 5 patents (3 granted, assigned to Ant Group and Tsinghua University).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">VITURE &middot; Software Development Engineer Intern</span>
+          <span class="entry-date">01/2025 &ndash; 04/2025</span>
+        </div>
+        <div class="entry-sub">Beijing, China</div>
+        <ul>
+          <li>Built a real-time YOLOv7 finger-tracking system on the phone's front camera so a smartphone can act as a touch controller for AR glasses, with implicit calibration that pairs touch events with tracked fingertip positions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><a href="https://github.com/cocoindex-io/cocoindex-code/pull/212">CocoIndex-Code</a>: AST-based semantic code search (open-source contributor)</span>
+          <span class="entry-date">06/2026 &ndash; present</span>
+        </div>
+        <ul>
+          <li>Designing and implementing the text-search path (<code>search --text</code>, 1,000+ lines) of a Python code search CLI built on the CocoIndex incremental indexing engine, aimed at context retrieval for AI coding agents.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">PaperFriend: LLM-powered paper reading assistant</span>
+          <span class="entry-date">03/2024 &ndash; 06/2024</span>
+        </div>
+        <ul>
+          <li>Built a RAG pipeline over arXiv with paper recommendation, context-aware summarization, and self-test question generation; a 10-participant user study showed gains in reading efficiency and comprehension.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Honors &amp; Awards</h2>
+      <ul>
+        <li>National Scholarship for Graduate Students, China Ministry of Education, 2025 (top 1%)</li>
+        <li>Outstanding Research Scholarship, Tsinghua University, 2024</li>
+        <li>Inventor on 10 granted or filed patents (9 China, 1 United States)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>Python, C/C++, JavaScript (Vue), Bash, VHDL</dd>
+        <dt>Machine Learning</dt>
+        <dd>PyTorch, NumPy/SciPy/Pandas; domain-adversarial learning, multimodal sensor fusion, time-series and audio modeling, LLM/RAG</dd>
+        <dt>Signal Processing</dt>
+        <dd>Multi-channel audio, acoustic features, IMU/PPG, RF (RSSI/phase), impedance spectra</dd>
+        <dt>Hardware &amp; Systems</dt>
+        <dd>PCB design (Eagle), sensor integration, data acquisition, Arduino, 3D printing, machine knitting; Linux, Git, Docker, CI/CD</dd>
+      </dl>
+    </section>
+
+    <div class="cv-link">
+      <a href="CV.pdf">Download full CV (PDF)</a>
+    </div>
+
+  </main>
+
+  <footer>Last updated October 2026</footer>
 
 </body>
 </html>
