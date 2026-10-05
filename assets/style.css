@@ -156,7 +156,8 @@ section.block { padding: 44px 0; }
 .project .media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .project:hover .media img { transform: scale(1.03); }
 .project .media svg { width: 100%; height: 100%; }
-.project .media img.overlay { position: absolute; inset: 0; object-fit: contain; background: #fff; }
+.project .media.figure { background: #fff; }
+.project .media.figure img { object-fit: contain; padding: 6px; }
 .project .body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
 .project .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 .tag {
